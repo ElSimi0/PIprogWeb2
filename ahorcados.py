@@ -151,3 +151,8 @@ def jugar():
                  palabraSecreta = obtenerPalabraAlAzar(palabras)
              else:
                 break
+
+if __name__ == "__main__":
+    jugar()
+else:
+    pass
