@@ -45,3 +45,9 @@ def jugar():
         explorarCueva(númeroDeCueva)
         print('¿Quieres jugar de nuevo? (si o no)')
         jugarDeNuevo = input().lower()
+
+
+if __name__ == "__main__":
+    jugar()
+else:
+    pass
