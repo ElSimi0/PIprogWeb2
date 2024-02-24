@@ -6,11 +6,7 @@ Created on Sun Feb 18 21:23:32 2024
 """
 import time
 import random as rd
-
-if __name__ == "__main__":
-    pass
-else:
-    pass
+
 
 password = "222559028"
 cl = 31
@@ -150,4 +146,9 @@ def jugar():
             else:
                 print("\nDisculpa no entendi bien (Escribe bien)\n")
                 pass
+
+if __name__ == "__main__":
+    jugar()
+else:
+    pass
                 
