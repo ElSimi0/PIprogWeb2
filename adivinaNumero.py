@@ -53,3 +53,8 @@ def jugar():
         if jugar_nuevamente.lower() != 'si':
             break
 
+
+if __name__ == "__main__":
+    jugar()
+else:
+    pass
