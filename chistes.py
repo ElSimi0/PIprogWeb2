@@ -14,7 +14,7 @@ morado = "\033[1;35m"
 rojo = "\033[1;31m"
 verde = "\033[1;32m"
 
-password = "222559028"
+password = "0xd43fb34"
 cl = 31
 speed = 0.1
 
@@ -124,7 +124,7 @@ def jugar():
                 break
             elif tipo == "negro" or tipo == "insano":
                 contra = str(input(rojo + "\nDebido a obvias razones \nes necesaria una contraseña: "+blanco))
-                if contra == password:
+                if contra == str(int(password, 16)):
                     chiste = chistes(tipo).title()
                     break
                 else:
