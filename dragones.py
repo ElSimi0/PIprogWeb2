@@ -9,7 +9,7 @@ import time
 
 
 
-print('\033[45;3m')
+
 def mostrarIntroduccion():
     print("Estás en busca de un tesoro dentro de una tierra llena de dragones. Frente a ti hay dos cuevas. En una de ellas, el dragón es generoso y amigable y compartirá su tesoro contigo. El otro dragón es codicioso y está hambriento, y te devorará inmediatamente.")
 
