@@ -6,7 +6,13 @@ Created on Sun Feb 18 21:23:32 2024
 """
 import time
 import random as rd
-
+
+azul = "\033[1;34m"
+amarillo = "\033[1;33m"
+blanco = "\033[0m"
+morado = "\033[1;35m"
+rojo = "\033[1;31m"
+verde = "\033[1;32m"
 
 password = "222559028"
 cl = 31
@@ -112,43 +118,42 @@ def jugar():
     continuar = True
     while continuar == True:
         while True:
-            tipo = str(input("\nQue tipo de chiste quieres \nBlanco, Gris, Negro o Insano : ")).lower()
+            tipo = str(input(blanco+"\nQue tipo de chiste quieres \nBlanco, Gris, Negro o Insano : ")).lower()
             if tipo == "blanco" or tipo == "gris":
                 chiste = chistes(tipo).title()
                 break
             elif tipo == "negro" or tipo == "insano":
-                contra = str(input("\nDebido a obvias razones \nes necesaria una contraseña: "))
+                contra = str(input(rojo + "\nDebido a obvias razones \nes necesaria una contraseña: "+blanco))
                 if contra == password:
                     chiste = chistes(tipo).title()
                     break
                 else:
-                    print("Contraseña es incorrecta\n")
+                    print(verde + "Contraseña es incorrecta\n" + blanco)
             elif tipo != "blanco" or tipo != "gris" or tipo != "negro" or tipo != "insano":
                 time.sleep(0.3)
-                print("\nERROR: Escribe bien xfa\n")
+                print(rojo+"\nERROR: Escribe bien xfa\n"+blanco)
                 time.sleep(0.1)
         speed = 0.1
         
         for letra in chiste:
-            print(letra, end='', flush=True)
+            print(blanco + letra, end='', flush=True)
             if letra == "-":
                 speed = 0.15
             elif letra == ".":
                 speed = 0.1
             time.sleep(speed)
         while True:
-            ask = str(input("\nDesea Continuar (y/n) ? : ")).lower()
+            ask = str(input(azul + "\nDesea Continuar (y/n) ? : ")).lower()
             if ask == "y" or ask == "si" or ask == "yes":
                 break
             elif ask == "n" or ask == "no":
                 continuar = False
                 break
             else:
-                print("\nDisculpa no entendi bien (Escribe bien)\n")
+                print(rojo + "\nDisculpa no entendi bien (Escribe bien)\n")
                 pass
-
+                
 if __name__ == "__main__":
     jugar()
 else:
     pass
-                
