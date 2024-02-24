@@ -23,7 +23,7 @@ while True:
     opcion = str(input("¿Que juego te interesa?: ")).lower()
     
     if opcion == "chiste" or opcion == "chistes":
-        print("\nEs un juego donde encontraras chistes\ndesde los mas familiares hasta unas\njoyitas escondidas")
+        print("\nEs un juego donde encontraras chistes\ndesde los mas familiares hasta unas\njoyitas escondidas\n\n")
         while True:
             iniciar = str(input("Desea Jugar este Juego (y/n) ?: ")).lower()
             if iniciar == "si" or iniciar == "y":
@@ -34,7 +34,7 @@ while True:
             else:
                 print("No te entendi ni vrga\n")            
     elif opcion == "dragon" or opcion == "dragones":
-        print("\nRPG lineal sobre un calabozo, una gran\nhistoria y graficos excelentes (No tiene graficos)")
+        print("\nRPG lineal sobre un calabozo, una gran\nhistoria y graficos excelentes (No tiene graficos)\n")
         while True:
             iniciar = str(input("Desea Jugar este Juego (y/n) ?: ")).lower()
             if iniciar == "si" or iniciar == "y":
@@ -45,7 +45,7 @@ while True:
             else:
                 print("No te entendi ni vrga\n")              
     elif opcion == "ahorcados" or opcion == "ahorcado":
-        print("\nBasado en el manga original, este juego explora\nla cualidad humana bajo el ojo de la naturaleza")
+        print("\nBasado en el manga original, este juego explora\nla cualidad humana bajo el ojo de la naturaleza\n")
         while True:
             iniciar = str(input("Desea Jugar este Juego (y/n) ?: ")).lower()
             if iniciar == "si" or iniciar == "y":
@@ -56,7 +56,7 @@ while True:
             else:
                 print("No te entendi ni vrga\n")
     elif opcion == "numero" or opcion == "numeros":
-        print("numeros :)")
+        print("\nnumeros :)\n")
         while True:
             iniciar = str(input("Desea Jugar este Juego (y/n) ?: ")).lower()
             if iniciar == "si" or iniciar == "y":
