@@ -17,9 +17,9 @@ def jugar():
     while True:
         intentos = 0
         num = random.randint(0, 100)
-        print(verde + "#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#")
-        print(verde + "#=#=#=#=💯0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ Adivina el número5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 💯=#=#=#=#")
-        print(verde + "#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#")
+        print(verde + "#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#")
+        print(verde + "#=#=#=#=💯0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣Adivina el número5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 💯=#=#=#=#")
+        print(verde + "#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#")
       
         print(azul + "Hola y bienvenido al juego Adivina el número ")
         nombre = input(amarillo + "¿Cómo te llamas? ")
@@ -52,7 +52,6 @@ def jugar():
         jugar_nuevamente = input("¿Deseas jugar de nuevo? (si/no): ")
         if jugar_nuevamente.lower() != 'si':
             break
-
 
 if __name__ == "__main__":
     jugar()
